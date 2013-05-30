@@ -29,7 +29,7 @@ def test_simple_math_with_randon_generated_by_nasa(nasa_random_generator):
   add_and_sum_with_rnd(3, 9).should.be.equals(54)
 
 #Mocking an internal dependency
-@patch('mailer.send')
+@patch('cmath.mailer.send')
 def test_simple_math_that_sends_email(mailer_mock):
   add_and_sends_email(3, 9)
 
